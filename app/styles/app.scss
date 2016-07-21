@@ -1,0 +1,50 @@
+
+$ButtonGrey:#ddd;
+$ButtonGreen:#80cbc4;
+$HeaderBarBlue:#00bbd3;
+$TitleWhite:#fff;
+$RegularText:rgba(255, 255, 255, 0.6);
+$PlaceholderText:rgba(255, 255, 255, 0.4);
+$GreenText:#92cbc5;
+$ButtonTextGrey:#1c1c1c;
+*{
+  box-sizing: border-box;
+
+font-family: 'Roboto', sans-serif;
+
+}
+body,h1,h2{margin: 0;}
+.whole-container{
+
+}
+.whole-container__inner{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  height: 100vh;
+}
+.main{
+
+  width: 35rem;
+  border: .4rem #666 solid;
+
+}
+
+.top-container{
+  background: $HeaderBarBlue;
+  &__inner{
+    width: 100%;;
+    .title{
+      padding:1rem;
+      color:$TitleWhite;
+    }
+
+  }
+}
+.container{
+  background: black;
+  height: 40rem;
+
+}
