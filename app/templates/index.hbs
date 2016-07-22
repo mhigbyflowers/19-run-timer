@@ -2,7 +2,7 @@
 
 <div class="app">
 <ul class="app-list">
-#{{#each model as |value|}}
+{{#each model as |value|}}
 
 
 {{#link-to 'detail' value._id }}
@@ -16,7 +16,7 @@
 
 </div>
 {{#link-to 'new'}}
-<h1 class = "circle">Circle</h1>
+<h2 class = "circle"><span>+</span></h2>
 {{/link-to}}
 
 

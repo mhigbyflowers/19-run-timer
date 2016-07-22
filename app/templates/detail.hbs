@@ -1,18 +1,23 @@
 <div class="app">
 <h1 class="detail-title">New Run</h1>
-<ul class="app-list">
 
-
-
+<ul class="app-list details">
 
   <li class="app-list__item">
-  <p class="app-list__item-date">date</p>
-  <p class="app-list__item-time">time</p>
-  </li>
 
-  <p class="run-notes">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
 
+
+  <p class="app-list__item-date">{{model.runDate}}</p>
+  <p class="app-list__item-time">{{model.runTime}}</p>
+</li>
+  <p class="run-notes">{{model.runNotes}}</p>
 </ul>
+{{#link-to 'index'}}
+<h3 class="circle-back"><span>&#12296;</span></h3>
+
+{{/link-to}}
+
+{{#link-to 'edit' model._id}}
+<h3 class="circle-edit"><span>edit</span></h3>
+{{/link-to}}
 </div>

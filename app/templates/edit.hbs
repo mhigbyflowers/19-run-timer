@@ -1,0 +1,21 @@
+
+<ul class="app-list">
+<form{{action "editRun" model._id on="submit"}}>
+<li class="app-list__item">
+
+{{input type="text" class="app-list__item  text-input" value=model.runTime placeholder="Run Time"}}
+  </li>
+<li class="app-list__item">
+  {{input type="text" class="app-list__item  text-input" value=model.runDate placeholder="Run Date"}}
+</li>
+<li class="app-list__item">
+{{input type="text" class="app-list__item notes text-input" value=model.runNotes placeholder="Run Notes"}}
+</li>
+<li class="app-list__item">
+{{#link-to 'index'}}
+<button type="button">Cancel</button>
+{{/link-to}}
+<button>Save</button>
+</li>
+</form>
+</ul>

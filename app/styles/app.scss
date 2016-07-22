@@ -16,6 +16,9 @@ $width: 80vw;
 font-family: 'Roboto', sans-serif;
 
 }
+a:link{
+text-decoration: none;
+}
 
 body,h1,h2,p,li{
   margin: 0;
@@ -67,10 +70,22 @@ position: relative;
 }
 }
 
-.circle{color:white;
+.circle{
+  background: $ButtonGreen;
   position: absolute;
-  right:0;
-  bottom: 0;
+  right:1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  color:white;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+
 }
 
 .app{
@@ -96,8 +111,12 @@ margin: -1rem;
   justify-content: space-between;
   padding-top: 1rem;
 
+
   &-time{
     color:$GreenText;
+
+
+
   }
 }
 }
