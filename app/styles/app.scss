@@ -13,27 +13,38 @@ $ButtonTextGrey:#1c1c1c;
 font-family: 'Roboto', sans-serif;
 
 }
-body,h1,h2{margin: 0;}
-.whole-container{
+body{background: #666;}
+body,h1,h2,p,li{
+  margin: 0;
+  padding: 0;
 
 }
-.whole-container__inner{
-
+ul{
+  padding: 0;
+  margin: 0;
+}
+.whole-container{
   display: flex;
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
   height: 100vh;
-}
-.main{
 
-  width: 35rem;
-  border: .4rem #666 solid;
+
+}
+.whole-container__inner{
+
 
 }
 
 .top-container{
+  position: fixed;
+  width: 50%;
+
+
   background: $HeaderBarBlue;
+
+
   &__inner{
     width: 100%;;
     .title{
@@ -44,7 +55,30 @@ body,h1,h2{margin: 0;}
   }
 }
 .container{
+&__inner{
   background: black;
-  height: 40rem;
+  height: 80vh;
+}
+}
+
+
+
+.app{
+width: 50vw;
+
+
+&-list{
+    list-style: none;
+padding:4rem 1rem;
+margin: 0 -.5rem;
+
+&__item{
+  color:$RegularText;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $PlaceholderText solid .1rem;
+  padding-top: 1rem;
+}
+}
 
 }
