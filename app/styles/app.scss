@@ -7,13 +7,14 @@ $RegularText:rgba(255, 255, 255, 0.6);
 $PlaceholderText:rgba(255, 255, 255, 0.4);
 $GreenText:#92cbc5;
 $ButtonTextGrey:#1c1c1c;
+$width: 80vw;
 *{
   box-sizing: border-box;
 
 font-family: 'Roboto', sans-serif;
 
 }
-body{background: #666;}
+
 body,h1,h2,p,li{
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ ul{
   justify-content:space-around;
   align-items: center;
   height: 100vh;
-
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(61,50,50,1) 65%);
 
 }
 .whole-container__inner{
@@ -39,8 +40,9 @@ ul{
 
 .top-container{
   position: fixed;
-  width: 50%;
-
+  width: $width;
+border-top-left-radius: .3rem;
+border-top-right-radius: .3rem;
 
   background: $HeaderBarBlue;
 
@@ -58,19 +60,22 @@ ul{
 &__inner{
   background: black;
   height: 80vh;
+  border-radius: .5rem;
+
 }
 }
 
 
 
 .app{
-width: 50vw;
-
+width: $width;
 
 &-list{
     list-style: none;
 padding:4rem 1rem;
-margin: 0 -.5rem;
+
+// background: #666;
+
 
 &__item{
   color:$RegularText;
@@ -78,6 +83,9 @@ margin: 0 -.5rem;
   justify-content: space-between;
   border-bottom: $PlaceholderText solid .1rem;
   padding-top: 1rem;
+  &-time{
+    color:$GreenText;
+  }
 }
 }
 
