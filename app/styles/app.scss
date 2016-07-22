@@ -82,6 +82,7 @@ padding:1rem;
 padding: 0 1rem;
 display: flex;
 flex-direction: column;
+margin: -1rem;
 
 
 // background: #666;
@@ -108,9 +109,11 @@ flex-direction: column;
   background: transparent;
   border:none;
   border-bottom: $PlaceholderText solid .1rem;
-
   width: 100%;
-   font-size: 1rem;
+   font-size: 1.5rem;
    color:$GreenText;
    &::-webkit-input-placeholder{color:$PlaceholderText;}
+}
+form{
+  padding:1rem;
 }

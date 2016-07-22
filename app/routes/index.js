@@ -5,6 +5,6 @@ export default Ember.Route.extend({
     return fetch(`http://tiny-tn.herokuapp.com/collections/runs-mhf`)
 .then((res) => res.json());
 }
-  }
+
 
 });

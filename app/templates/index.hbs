@@ -2,17 +2,14 @@
 
 <div class="app">
 <ul class="app-list">
+#{{#each model as |value|}}
 
+{{log value}}
   <li class="app-list__item divider">
-
-  <p class="app-list__item-date ">Dec 1, 2015</p>
-  <p class="app-list__item-time">00:23:15</p>
+  <p class="app-list__item-date ">{{value.runDate}}</p>
+  <p class="app-list__item-time">{{value.runTime}}</p>
   </li>
-  <li class="app-list__item divider">
-  <p class="app-list__item-date">Dec 1, 2015</p>
-  <p class="app-list__item-time">00:23:15</p>
-  </li>
-
+{{/each}}
 </ul>
 
 </div>

@@ -4,16 +4,16 @@
   <h1 class="app-title">New Run</h1>
 </div>
 <ul class="app-list">
-<form>
+<form{{action "newRun" on="submit"}}>
 <li class="app-list__item">
 
-<input type="text" class="app-list__item  text-input" placeholder="Run Time">
+{{input type="text" class="app-list__item  text-input" value=runTime placeholder="Run Time"}}
   </li>
 <li class="app-list__item">
-  <input type="text" class="app-list__item  text-input" placeholder="Race Date">
+  {{input type="text" class="app-list__item  text-input" value=runDate placeholder="Run Date"}}
 </li>
 <li class="app-list__item">
-<input type="text" class="app-list__item notes text-input" placeholder="Race Notes">
+{{input type="text" class="app-list__item notes text-input" value=runNotes placeholder="Run Notes"}}
 </li>
 <li class="app-list__item">
 {{#link-to 'index'}}
