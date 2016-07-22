@@ -1,5 +1,4 @@
 
-@import 'new';
 $ButtonGrey:#ddd;
 $ButtonGreen:#80cbc4;
 $HeaderBarBlue:#00bbd3;
@@ -9,6 +8,8 @@ $PlaceholderText:rgba(255, 255, 255, 0.4);
 $GreenText:#92cbc5;
 $ButtonTextGrey:#1c1c1c;
 $width: 80vw;
+@import 'new';
+@import 'detail';
 *{
   box-sizing: border-box;
 
