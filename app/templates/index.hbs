@@ -2,17 +2,23 @@
 
 <div class="app">
 <ul class="app-list">
-  <li class="app-list__item">
+
+  <li class="app-list__item divider">
+
+  <p class="app-list__item-date ">Dec 1, 2015</p>
+  <p class="app-list__item-time">00:23:15</p>
+  </li>
+  <li class="app-list__item divider">
   <p class="app-list__item-date">Dec 1, 2015</p>
   <p class="app-list__item-time">00:23:15</p>
   </li>
-  <li class="app-list__item">
-  <p class="app-list__item-date">Dec 1, 2015</p>
 
-  </li>
 </ul>
-</div>
 
+</div>
+{{#link-to 'new'}}
+<h1 class = "circle">CIrcle</h1>
+{{/link-to}}
 
 
 {{outlet}}

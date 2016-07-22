@@ -1,0 +1,25 @@
+
+
+<div class="app">
+  <h1 class="app-title">New Run</h1>
+</div>
+<ul class="app-list">
+<form>
+<li class="app-list__item">
+
+<input type="text" class="app-list__item  text-input" placeholder="Run Time">
+  </li>
+<li class="app-list__item">
+  <input type="text" class="app-list__item  text-input" placeholder="Race Date">
+</li>
+<li class="app-list__item">
+<input type="text" class="app-list__item notes text-input" placeholder="Race Notes">
+</li>
+<li class="app-list__item">
+{{#link-to 'index'}}
+<button type="button">Cancel</button>
+{{/link-to}}
+<button>Save</button>
+</li>
+</form>
+</ul>

@@ -1,4 +1,5 @@
 
+@import 'new';
 $ButtonGrey:#ddd;
 $ButtonGreen:#80cbc4;
 $HeaderBarBlue:#00bbd3;
@@ -39,7 +40,7 @@ background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(61,50,50,1) 65%
 }
 
 .top-container{
-  position: fixed;
+  // position: fixed;
   width: $width;
 border-top-left-radius: .3rem;
 border-top-right-radius: .3rem;
@@ -60,33 +61,56 @@ border-top-right-radius: .3rem;
 &__inner{
   background: black;
   height: 80vh;
-  border-radius: .5rem;
-
+  // border-radius: .5rem;
+position: relative;
 }
 }
 
-
+.circle{color:white;
+  position: absolute;
+  right:0;
+  bottom: 0;
+}
 
 .app{
 width: $width;
+padding:1rem;
 
 &-list{
     list-style: none;
-padding:4rem 1rem;
+// margin:-1rem;
+padding: 0 1rem;
+display: flex;
+flex-direction: column;
+
 
 // background: #666;
 
 
 &__item{
+
   color:$RegularText;
   display: flex;
   justify-content: space-between;
-  border-bottom: $PlaceholderText solid .1rem;
   padding-top: 1rem;
+
   &-time{
     color:$GreenText;
   }
 }
 }
 
+}
+.divider{  border-bottom: $PlaceholderText solid .1rem;
+}
+.text-input{
+  margin-bottom:1rem ;
+  background: transparent;
+  border:none;
+  border-bottom: $PlaceholderText solid .1rem;
+
+  width: 100%;
+   font-size: 1rem;
+   color:$GreenText;
+   &::-webkit-input-placeholder{color:$PlaceholderText;}
 }
