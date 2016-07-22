@@ -4,17 +4,19 @@
 <ul class="app-list">
 #{{#each model as |value|}}
 
-{{log value}}
+
+{{#link-to 'detail' value._id }}
   <li class="app-list__item divider">
-  <p class="app-list__item-date ">{{value.runDate}}</p>
+  <p class="app-list__item-date">{{value.runDate}}</p>
   <p class="app-list__item-time">{{value.runTime}}</p>
   </li>
+  {{/link-to}}
 {{/each}}
 </ul>
 
 </div>
 {{#link-to 'new'}}
-<h1 class = "circle">CIrcle</h1>
+<h1 class = "circle">Circle</h1>
 {{/link-to}}
 
 
