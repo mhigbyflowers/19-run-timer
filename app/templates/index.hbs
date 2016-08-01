@@ -6,10 +6,12 @@
 
 
 {{#link-to 'detail' value._id }}
+{{#if value.runDate}}
   <li class="app-list__item divider">
   <p class="app-list__item-date">{{value.runDate}}</p>
   <p class="app-list__item-time">{{value.runTime}}</p>
   </li>
+  {{/if}}
   {{/link-to}}
 {{/each}}
 </ul>

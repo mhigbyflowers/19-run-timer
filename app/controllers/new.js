@@ -13,10 +13,17 @@ export default Ember.Controller.extend({
         'Content-Type' : 'application/json',
         'Accept' : 'application/json'
       },
-      method:'post',
-      body: JSON.stringify(data)
+      method: 'post',
+      body: JSON.stringify(data),
+    }).then((res) => res.json())
+      .then(() => {
+      this.setProperties({
+        'time': '',
+        'date': '',
+        'notes': ''
+      });
+      this.transitionToRoute('index');
     });
-
   }
 }
 });
