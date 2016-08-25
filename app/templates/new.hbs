@@ -1,0 +1,25 @@
+
+
+<div class="app">
+  <h1 class="app-title">New Run</h1>
+</div>
+<ul class="app-list">
+<form{{action "newRun" on="submit"}}>
+<li class="app-list__item">
+
+{{input type="text" class="app-list__item  text-input" value=runTime placeholder="Run Time"}}
+  </li>
+<li class="app-list__item">
+  {{input type="text" class="app-list__item  text-input" value=runDate placeholder="Run Date"}}
+</li>
+<li class="app-list__item">
+{{input type="text" class="app-list__item notes text-input" value=runNotes placeholder="Run Notes"}}
+</li>
+<li class="app-list__item">
+{{#link-to 'index'}}
+<button class="btn" type="button">Cancel</button>
+{{/link-to}}
+<button class="btn">Save</button>
+</li>
+</form>
+</ul>

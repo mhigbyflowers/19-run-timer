@@ -1,0 +1,55 @@
+.detail-title{
+  color:white;
+
+}
+.run-notes{
+  padding:1rem 0;
+  color:$RegularText;
+}
+.details{
+margin-top: 1rem !important;
+}
+.circle-back{
+  background: $ButtonGreen;
+  position: absolute;
+  left:1rem;
+  bottom: 0rem;
+  padding: 1rem;
+  color:white;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+span{
+  position: relative;
+  right:.4rem;
+
+}
+}
+
+.circle-edit{
+  background: $ButtonGreen;
+  position: absolute;
+  right:1rem;
+  bottom: 0rem;
+  /*padding: 1rem;*/
+  color:white;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+span{
+
+
+}
+
+
+}
